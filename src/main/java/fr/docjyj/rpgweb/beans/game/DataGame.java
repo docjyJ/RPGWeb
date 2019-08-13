@@ -2,7 +2,6 @@ package fr.docjyj.rpgweb.beans.game;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import fr.docjyj.rpgweb.beans.Stock.ObjectStock;
 
 import java.util.List;
 
