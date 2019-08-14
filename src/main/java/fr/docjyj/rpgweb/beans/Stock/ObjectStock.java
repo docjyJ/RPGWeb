@@ -16,6 +16,10 @@ public class ObjectStock {
     @Expose
     private String description;
 
+    @SerializedName("Color")
+    @Expose
+    private String color;
+
     @SerializedName("Health")
     @Expose
     private int health;
@@ -58,6 +62,14 @@ public class ObjectStock {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public int getAttack() {

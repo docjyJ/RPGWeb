@@ -4,7 +4,6 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
-import java.util.Objects;
 
 public class DataStock {
 
@@ -16,9 +15,9 @@ public class DataStock {
     @Expose
     private List<ObjectStock> mobs;
 
-    @SerializedName("Weapon")
+    @SerializedName("Weapons")
     @Expose
-    private List<ObjectStock> weapon;
+    private List<ObjectStock> weapons;
 
     @SerializedName("Objects")
     @Expose
@@ -26,16 +25,7 @@ public class DataStock {
 
     @SerializedName("Rooms")
     @Expose
-    private List<RoomStock> room;
-
-
-    public List<ObjectStock> getMobs() {
-        return mobs;
-    }
-
-    public void setMobs(List<ObjectStock> mobs) {
-        this.mobs = mobs;
-    }
+    private List<RoomStock> rooms;
 
     public List<ObjectStock> getPlayers() {
         return players;
@@ -45,12 +35,20 @@ public class DataStock {
         this.players = players;
     }
 
-    public List<ObjectStock> getWeapon() {
-        return weapon;
+    public List<ObjectStock> getMobs() {
+        return mobs;
     }
 
-    public void setWeapon(List<ObjectStock> weapon) {
-        this.weapon = weapon;
+    public void setMobs(List<ObjectStock> mobs) {
+        this.mobs = mobs;
+    }
+
+    public List<ObjectStock> getWeapons() {
+        return weapons;
+    }
+
+    public void setWeapons(List<ObjectStock> weapons) {
+        this.weapons = weapons;
     }
 
     public List<ObjectStock> getObject() {
@@ -61,11 +59,11 @@ public class DataStock {
         this.object = object;
     }
 
-    public List<RoomStock> getRoom() {
-        return room;
+    public List<RoomStock> getRooms() {
+        return rooms;
     }
 
-    public void setRoom(List<RoomStock> room) {
-        this.room = room;
+    public void setRooms(List<RoomStock> rooms) {
+        this.rooms = rooms;
     }
 }

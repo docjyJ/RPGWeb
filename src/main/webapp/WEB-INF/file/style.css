@@ -13,18 +13,19 @@ table {
     font-size: medium;
     min-width: 300px;
 }
-td:nth-child(2)  {
-    width: 60%;
+td{
     padding: 8px;
 }
-td:nth-child(1), td:nth-child(3)  {
-    width: 20%;
+td:first-child {
+    width: 5%;
+}
+td:last-child  {
+    width: 15%;
     padding: 2px;
 }
 tr:nth-child(even){
     background-color: #eee
 }
-
 thead tr {
     background-color: #bbb;
 }
@@ -57,11 +58,16 @@ h1{
 article{
     vertical-align: top;
     display: inline-block;
+    width: 50%;
+}
+div.article{
+    vertical-align: top;
+    display: inline-block;
     margin: 3px;
     border: #555 solid 1px;
     overflow: auto;
-    width: calc( 50% - 11px);
-    max-height: calc( 50% - 11px);
+    width: calc( 100% - 8px);
+    max-height: calc( 100% - 8px);
 }
 /*
  *  Form
@@ -73,7 +79,7 @@ form{
     border: #555 solid 1px;
     overflow: auto;
     width: calc( 100% - 8px);
-    max-height: calc( 50% - 8px);
+    max-height: calc( 100% - 8px);
 }
 label{
     display: block;
@@ -85,4 +91,43 @@ label:nth-child(even){
 nav{
     padding: 2px;
     background-color: #ddd;
+}
+/*
+ *  MAP
+ */
+div.map{
+    position: sticky;
+    height: 100%;
+    width: 100%;
+    background: black;
+    margin-top: 5%;
+}
+div.room{
+    position: absolute;
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+}
+div.room div{
+    display: none;
+    position: absolute;
+    left: calc( 100% + 1px);
+    top: -25px;
+    height:  calc( 100% + 50px);
+    width: auto;
+    background: black;
+    z-index: 999;
+}
+div.room:hover div {
+    display: inline-block;
+}
+text{
+    display: block;
+    width: calc( 100% - 20px);
+    height: calc( 100% - 20px);
+    padding: 10px;
+}
+div.room:hover div h2, div.room:hover div p{
+    margin: 0;
+    height: calc( 50% - 10px );
 }

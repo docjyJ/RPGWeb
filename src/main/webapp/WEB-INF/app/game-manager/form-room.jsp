@@ -9,7 +9,7 @@
     <label>
         Picture
         <input type="url" name="picture" value="<c:out value="${ object.picture }"/>"/>
-        Help: link a square image.
+        Help: link a landscape image.
     </label>
     <label>
         Description
@@ -20,29 +20,20 @@
         <input type="color" name="color" value="<c:out value="${ object.color }"/>"/>
     </label>
     <label>
-        Health
-        <input type="number" name="health" value="<c:out value="${ object.health }"/>"/>
-        Help: set to 0 to disable the ability.
+        X
+        <input type="number" name="x" value="<c:out value="${ object.x }"/>"/>
     </label>
     <label>
-        Srength
-        <input type="number" name="srength" value="<c:out value="${ object.srength }"/>"/>
-        Help: set to 0 to disable the ability.
+        Y
+        <input type="number" name="y" value="<c:out value="${ object.y }"/>"/>
     </label>
     <label>
-        Agility
-        <input type="number" name="agility" value="<c:out value="${ object.agility }"/>"/>
-        Help: set to 0 to disable the ability.
+        TX
+        <input type="number" name="tX" value="<c:out value="${ object.tX }"/>"/>
     </label>
     <label>
-        Focus
-        <input type="number" name="focus" value="<c:out value="${ object.focus }"/>"/>
-        Help: set to 0 to disable the ability.
-    </label>
-    <label>
-        Attack
-        <input type="number" name="attack" value="<c:out value="${ object.attack }"/>"/>
-        Help: set to 0 to disable the ability.
+        TY
+        <input type="number" name="tY" value="<c:out value="${ object.tY }"/>"/>
     </label>
     <nav>
         <button type="submit"><i class="material-icons">check</i></button>
